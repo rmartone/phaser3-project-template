@@ -38,7 +38,6 @@ export default (env, options) => {
       new DefinePlugin({
         CANVAS_RENDERER: JSON.stringify(true),
         WEBGL_RENDERER: JSON.stringify(true),
-        PLUGIN_FBINSTANT: JSON.stringify(true),
       }),
     ],
 

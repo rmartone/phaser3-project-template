@@ -6,7 +6,11 @@
   "scripts": {
     "build": "webpack --mode production",
     "lint": "tsc --noEmit && eslint 'src/*.ts' --fix",
-    "serve": "webpack-dev-server --port=8080 --https"
+    "start": "webpack-dev-server --port=8080 --https --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmartone/phaser3-project-templatehttps://github.com/rmartone/phaser3-project-template"
   },
   "dependencies": {
     "phaser": "^3.18.1"
