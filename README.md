@@ -12,7 +12,7 @@ that includes hot-reloading for development and production-ready builds.
 | Command | Description |
 |---------|-------------|
 | `yarn install` | Installs project dependencies |
-| `yarn lint`  | Runs eslint using recommened typescript settings |
+| `yarn lint`  | Performs type checks using tsc with eslint |
 | `yarn start` | Builds the project and opens web browser to the local server |
 | `yarn build` | Builds the code bundle with production settings (minification etc.) |
 

@@ -2,7 +2,7 @@
   "name": "phaser3-project-template",
   "version": "1.0.0",
   "description": "phaser 3 project template for tyoescript",
-  "author": "Ray Martone",
+  "author": "Ray Martone <rmartone@gmail.com>",
   "scripts": {
     "build": "webpack --mode production",
     "lint": "tsc --noEmit && eslint 'src/*.ts' --fix",
