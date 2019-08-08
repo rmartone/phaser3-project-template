@@ -1,2 +1,3 @@
-*.* linguist-language=TypeScript
+*.js linguist-language=TypeScript
+public/index.html linguist-documentation=true
 * text=auto
