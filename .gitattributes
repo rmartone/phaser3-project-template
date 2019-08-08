@@ -1,2 +1,3 @@
-*.* linguist-language=TypeScript
+webpack.config.babel.js linguist-vendored
 * text=auto
+*.png binary
