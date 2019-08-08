@@ -5,21 +5,21 @@ that includes hot-reloading for development and production-ready builds.
 
 ## Requirements
 
-[Node.js](https://nodejs.org) and [Yarn](https://yarnpkg.com/en/docs/install#mac-stable) are required to install dependencies and run scripts.
+[Node.js](https://nodejs.org) is required to install dependencies and run scripts.
 
 ## Available Commands
 
 | Command | Description |
 |---------|-------------|
-| `yarn install` | Installs project dependencies |
-| `yarn lint`  | Performs type checks using tsc with eslint |
-| `yarn start` | Builds the project and opens web browser to the local server |
-| `yarn build` | Builds the code bundle with production settings (minification etc.) |
+| `npm install` | Installs project dependencies |
+| `npm run lint`  | Performs type checks using tsc with eslint |
+| `npm start` | Builds the project and opens web browser to the local server |
+| `npm run build` | Builds the code bundle with production settings (minification etc.) |
 
 ## Writing Code
 
-After cloning the repo, run `yarn install` from your project directory. Then, start your local development
-server by running `yarn start`. When you edit project files in the `src` folder, webpack will automatically
+After cloning the repo, run `npm install` from your project directory. Then, start your local development
+server by running `npm start`. When you edit project files in the `src` folder, webpack will automatically
 recompile and reload your server (available at `http://localhost:8080`
 by default).
 

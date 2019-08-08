@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "lint": "tsc --noEmit && eslint 'src/*.ts' --fix",
-    "start": "webpack-dev-server --port=8080 --https --open"
+    "start": "webpack-dev-server --https --port=8080 --content-base dist/ --open"
   },
   "repository": {
     "type": "git",
@@ -28,16 +28,18 @@
     "@typescript-eslint/eslint-plugin": "^1.13.0",
     "@typescript-eslint/parser": "^1.13.0",
     "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "html-webpack-plugin": "^4.0.0-beta.8",
     "prettier": "^1.18.2",
     "terser-webpack-plugin": "^1.4.1",
     "typescript": "^3.5.3",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2",
-    "yarn": "^1.17.3"
+    "webpack-dev-server": "^3.7.2"
   },
   "license": "MIT",
   "prettier": {

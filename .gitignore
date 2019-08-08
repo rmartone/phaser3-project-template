@@ -2,5 +2,5 @@
 !.gitattributes
 !.gitignore
 .*/
+dist/
 node_modules/
-public/*.js
