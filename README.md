@@ -1,7 +1,7 @@
 # Phaser 3 Webpack Project Template for Typescript
 
 A Phaser 3 project template with TypeScript support via [Babel 7](https://babeljs.io/) and [Webpack 4](https://webpack.js.org/)
-that includes hot-reloading for development and production-ready builds.
+that includes hot-reloading for development and production-ready builds. Also uses es-lint and prettier instead of tslint.
 
 ## Requirements
 
@@ -25,4 +25,4 @@ by default).
 
 ## About
 
-This was my attempt at a TypeScript version of Richard Davey's [phaser3-project-template](https://github.com/photonstorm/phaser3-project-template) for ES6.
+This was my attempt at a TypeScript version of  [phaser3-project-template](https://github.com/photonstorm/phaser3-project-template) that relies on es-lint and babel.

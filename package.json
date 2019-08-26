@@ -49,6 +49,13 @@
     "webpack-dev-server": "^3.7.2"
   },
   "license": "MIT",
+  "keywords": [
+    "phaser",
+    "tempalte",
+    "typescript",
+    "babel",
+    "es-lint"
+  ],
   "prettier": {
     "semi": true,
     "trailingComma": "all",
