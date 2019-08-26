@@ -5,7 +5,7 @@ import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CopyPlugin from 'copy-webpack-plugin';
 import TerserPlugin from 'terser-webpack-plugin';
 
-export default (env, options) => ({
+export default (_env, options) => ({
   entry: {
     app: './src/index.ts',
     vendors: ['phaser'],
@@ -15,11 +15,19 @@ export default (env, options) => ({
 
   devtool: options.mode === 'production' ? false : 'inline-source-map',
 
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.json']
+  },
+
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        use: 'babel-loader',
+        use: [
+          {
+            loader: 'babel-loader',
+          },
+        ],
       },
     ],
   },
@@ -44,8 +52,8 @@ export default (env, options) => ({
   ],
 
   performance: {
-    maxEntrypointSize: 1000000,
-    maxAssetSize: 1000000,
+    maxEntrypointSize: 1200000,
+    maxAssetSize: 1200000,
   },
 
   optimization: {
@@ -60,6 +68,8 @@ export default (env, options) => ({
     },
     minimizer: [
       new TerserPlugin({
+        cache: true,
+        parallel: true,
         terserOptions: {
           output: {
             comments: false,
