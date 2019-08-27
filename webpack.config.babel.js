@@ -33,9 +33,9 @@ export default (_env, options) => ({
   },
 
   output: {
-    filename: 'app.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
-    chunkFilename: 'vendors.js',
+    chunkFilename: '[name].js',
   },
 
   plugins: [
@@ -57,6 +57,8 @@ export default (_env, options) => ({
   },
 
   optimization: {
+    noEmitOnErrors: true,
+    runtimeChunk: 'single',
     splitChunks: {
       cacheGroups: {
         commons: {
