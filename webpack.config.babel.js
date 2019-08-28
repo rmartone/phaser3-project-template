@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import path from 'path';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import { DefinePlugin } from 'webpack';
@@ -8,7 +9,6 @@ import TerserPlugin from 'terser-webpack-plugin';
 export default (_env, options) => ({
   entry: {
     app: './src/index.ts',
-    vendors: ['phaser'],
   },
 
   mode: options.mode,
